@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "homes#top"
   
   resources :post_images, only: [:new, :index, :show, :create, :destroy] do
-    resources :post_comments, only: [:create]
+    resources :post_comments, only: [:create, :destroy]
   end 
   
   
