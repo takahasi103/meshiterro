@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row no-gutters">
-    <div class="col-md--5 col-sm-10 mx-2 mx-sm-auto chadow-lg rounded px-0 my-5">
+    <div class="col-md-5 col-sm-10 mx-2 mx-sm-auto chadow-lg rounded px-0 my-5">
       <h5 class="text-bark bh-light p-4 md-0">
         画像投稿フォーム
       </h5>
@@ -20,7 +20,7 @@
         
         <%= form_with model: @post_image do |f| %>
           <%= f.file_field :image, accept:"image/*", class:"w-100" %>
-          <div class="input-group md-3 mt-4">
+          <div class="input-group mb-3 mt-4">
             <div class="input-group-prepend">
               <span class="input-group-text" aria-hidden="true">
                 <i class="fas fa-building"></i>
